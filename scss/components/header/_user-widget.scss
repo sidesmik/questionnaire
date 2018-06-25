@@ -1,0 +1,46 @@
+.user-widget{
+	display: flex;
+	align-items: center;
+
+	.avatar{
+		width: 40px;
+		margin-right: 20px;
+
+		img{
+			display: block;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+		}
+	}
+
+	.descr{
+		.name{
+			font-size: 13px;
+			line-height: 18px;
+			font-weight: bold;
+			color: #fff;
+		}
+
+		.info{
+			font-size: 12px;
+			line-height: 14px;
+			display: flex;
+			align-items: baseline;
+
+			.status{
+				margin-right: 20px;
+				color: $text-gray;
+			}
+
+			a{
+				color: #fff;
+				text-decoration: underline;
+
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

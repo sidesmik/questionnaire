@@ -1,0 +1,23 @@
+.balance-widget{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.text{
+		margin-right: 20px;
+		font-size: 18px;
+		line-height: 18px;
+		color: #fff;
+	}
+
+	.buttons{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.item{
+			margin-right: 10px;
+			width: 90px;
+		}
+	}
+}

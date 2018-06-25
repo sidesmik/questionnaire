@@ -1,0 +1,54 @@
+.sidebar-nav{
+	padding: 5px;
+	border-radius: $r;
+	background: $light-bg;
+	list-style: none;
+
+	li{
+		margin-bottom: 4px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		a{
+			background: #fff;
+			display: block;
+			text-decoration: none;
+			padding: 12px 15px 12px 36px;
+			font-size: 14px;
+			line-height: 18px;
+			position: relative;
+			color: $blue;
+			transition: all $t;
+
+			&:before{
+				content: '';
+				display: block;
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background: $green;
+				transition: all $t;
+				position: absolute;
+				left: 15px;
+				top: calc(50% - 3px);
+			}
+
+			&:hover{
+				background: $midlight-bg;
+			}
+		}
+
+		&.current{
+			a{
+				background: $green;
+				color: #fff;
+
+				&:before{
+					background: #fff;
+				}
+			}
+		}
+	}
+}

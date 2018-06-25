@@ -1,0 +1,50 @@
+.header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: $blue;
+	padding: 15px 0;
+	z-index: 100;
+
+	.header-inner{
+		width: 100%;
+		max-width: $max-content-width;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.logo-section{
+			width: 240px;
+			flex: none;
+			margin-right: 45px;
+
+			.logo{
+				display: block;
+
+				img{
+					display: block;
+				}
+
+				&:hover{
+					opacity: .8;
+				}
+			}
+		}
+
+		.header-main{
+			display: flex;
+			flex: auto;
+			align-items: center;
+			justify-content: space-between;
+
+			.header-section{
+				margin-right: 20px;
+
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

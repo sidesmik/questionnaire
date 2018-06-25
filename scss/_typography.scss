@@ -1,0 +1,57 @@
+h1, .h1{
+	color: $violet;
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+h2, .h2{
+	font-size: 18px;
+	line-height: 24px;
+	color: $violet;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+h3, .h3{
+	font-size: 18px;
+	line-height: 24px;
+	color: $violet;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+a{
+	color: $blue;
+	text-decoration: none;
+	transition: all $t;
+
+	&:hover{
+		color: darken($blue, 10%);
+	}
+}
+
+body{
+	font-family: $main;
+	font-size: 14px;
+	line-height: 24px;
+	color: $text-color;
+}
+
+p{
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 12px;
+	color: $text-color;
+}
+
+ul{
+	margin-bottom: 12px;
+
+	li{
+		font-size: 14px;
+		line-height: 24px;
+		color: $text-color;
+	}
+}

@@ -1,0 +1,46 @@
+.btn{
+	display: inline-flex;
+	border: none;
+	transition: all $t;
+	cursor: pointer;
+	outline: none;
+
+	&.btn-default{
+		font-size: 14px;
+		line-height: 18px;
+		color: #fff;
+		background: $green;
+		text-align: center;
+		justify-content: center;
+		font-weight: bold;
+		padding: 11px 30px;
+		border-radius: $r;
+		box-shadow: 0 3px 16px rgba(#000, .2);
+
+		&:not(.disabled):hover{
+			background: darken($green, 10%);
+		}
+
+		&.btn-small{
+			font-weight: 400;
+			font-size: 12px;
+			padding: 3px 10px;
+		}
+	}
+
+	&.btn-gray{
+		background: $gray;
+
+		&:not(.disabled):hover{
+			background: darken($gray, 10%);
+		}
+	}
+
+	&.disabled{
+		cursor: default;
+	}
+
+	&.fullwidht{
+		width: 100%;
+	}
+}
