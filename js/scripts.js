@@ -44,12 +44,14 @@ $(document).ready(function(){
 	$("*:first-child > [data-tab]").click();
 
 	// jQuery Custom Fields
-	// jcf.setOptions('Range', {});
+	jcf.setOptions('Range', {});
 
-	// jcf.setOptions('Select', {
-	// 	wrapNative: false
-	// });
+	jcf.setOptions('Select', {
+		wrapNative: false,
+		useCustomScroll: true,
+		multipleCompactStyle: true
+	});
 
-	// jcf.replaceAll();
+	jcf.replaceAll();
 
 });

@@ -1,0 +1,11 @@
+.answers-list{
+	margin-left: 40px;
+
+	> .item{
+		margin-bottom: 10px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}

@@ -29,10 +29,10 @@
 		<div class="cards-list">
 			<div class="item">
 				<div class="card-block">
-					<a href="#" class="image" style="background: url(http://placeimg.com/255/125/any?v=<?= rand() ?>);"></a>
+					<a href="interview-single.php" class="image" style="background: url(http://placeimg.com/255/125/any?v=<?= rand() ?>);"></a>
 					<div class="card-content">
 						<div class="caption">
-							<a href="#">Длинное название опроса в несколько строк</a>
+							<a href="interview-single.php">Длинное название опроса в несколько строк</a>
 						</div>
 						<ul class="card-info">
 							<li><strong>Категория:</strong> Транспорт</li>
@@ -45,10 +45,10 @@
 			</div>
 			<div class="item">
 				<div class="card-block">
-					<a href="#" class="image" style="background: url(http://placeimg.com/255/125/any?v=<?= rand() ?>);"></a>
+					<a href="interview-single.php" class="image" style="background: url(http://placeimg.com/255/125/any?v=<?= rand() ?>);"></a>
 					<div class="card-content">
 						<div class="caption">
-							<a href="#">Название опроса</a>
+							<a href="interview-single.php">Название опроса</a>
 						</div>
 						<ul class="card-info">
 							<li><strong>Категория:</strong> Транспорт</li>
@@ -62,10 +62,10 @@
 			<?php for ($i = 0; $i < 7; $i++): ?>
 				<div class="item">
 					<div class="card-block">
-						<a href="#" class="image" style="background: url(http://placeimg.com/255/125/any?v=<?= rand() ?>);"></a>
+						<a href="interview-single.php" class="image" style="background: url(http://placeimg.com/255/125/any?v=<?= rand() ?>);"></a>
 						<div class="card-content">
 							<div class="caption">
-								<a href="#">Название опроса</a>
+								<a href="interview-single.php">Название опроса</a>
 							</div>
 							<ul class="card-info">
 								<li><strong>Категория:</strong> Транспорт</li>

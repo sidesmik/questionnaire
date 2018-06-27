@@ -1,0 +1,17 @@
+.interests-count-block{
+	display: flex;
+	align-items: center;
+
+	.count{
+		width: 30px;
+		padding-right: 5px;
+	}
+
+	.change{
+		width: 130px;
+
+		.jcf-select{
+			width: 130px;
+		}
+	}
+}

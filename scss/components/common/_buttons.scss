@@ -4,8 +4,20 @@
 	transition: all $t;
 	cursor: pointer;
 	outline: none;
+	text-decoration: none;
 
-	&.btn-default{
+	$btn_colors: (
+		blue: $blue,
+		lightblue: $lightblue,
+		green: $green,
+		lightgray: $lightgray,
+		gray: $gray,
+		dark: $dark,
+		violet: $violet,
+	);
+
+	&.btn-default,
+	&.btn-light{
 		font-size: 14px;
 		line-height: 18px;
 		color: #fff;
@@ -26,13 +38,46 @@
 			font-size: 12px;
 			padding: 3px 10px;
 		}
+
+		&:not(.btn-light){
+			@each $i in $btn_colors{
+				$color-key: nth($i, 1);
+				$color-value: nth($i, 2);
+
+				&.btn-#{$color-key}{
+					background: $color-value;
+
+					&:not(.disabled):hover{
+						background: darken($color-value, 10%);
+					}
+				}
+			}
+		}
 	}
 
-	&.btn-gray{
-		background: $gray;
+	&.btn-light{
+		background: transparent;
+		color: $green;
+		border: 2px solid $green;
+		padding: 9px 30px;
+		box-shadow: none;
 
-		&:not(.disabled):hover{
-			background: darken($gray, 10%);
+		&.btn-small{
+			padding: 1px 10px;
+		}
+
+		@each $i in $btn_colors{
+			$color-key: nth($i, 1);
+			$color-value: nth($i, 2);
+
+			&.btn-#{$color-key}{
+				color: $color-value;
+				border-color: $color-value;
+
+				&:not(.disabled):hover{
+					background: #eee;
+				}
+			}
 		}
 	}
 
