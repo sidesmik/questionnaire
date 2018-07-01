@@ -24,11 +24,15 @@
 @import "components/common/recaptcha";
 @import "components/common/tables";
 @import "components/common/interests-count-block";
+@import "components/common/tab-switcher";
+@import "components/common/status-block";
+@import "components/common/panel";
 
 // Forms
 @import "components/forms/forms";
 @import "components/forms/radio-block";
 @import "components/forms/date-select-block";
+@import "components/forms/range";
 
 // Interview Single
 @import "components/interview/question-card";
@@ -37,3 +41,17 @@
 
 // Banners
 @import "components/banners/banner-block";
+
+// Referrals
+@import "components/referrals/referral-step-block";
+
+// Gifts
+@import "components/gifts/gift-block";
+
+// Advertisment
+@import "components/advertisment/tarrif-plans-list";
+@import "components/advertisment/tarrif-plan-block";
+@import "components/advertisment/advertisment-block";
+
+// Editors
+@import "components/editors/question-editor";

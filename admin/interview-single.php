@@ -5,9 +5,9 @@
 		<?php include('page-parts/sidebar.inc.php') ?>
 	</div>
 	<div class="page-content">
-		<div class="page-header">
-			<h1 class="margin-no"><?= $page_title ?></h1>
-			<a href="index.php" class="back-btn">Назад к списку вопросов</a>
+		<div class="page-header sm-flex-column sm-align-stretch">
+			<h1 class="margin-no sm-margin-bottom-small"><?= $page_title ?></h1>
+			<a href="index.php" class="back-btn sm-margin-bottom-small">Назад к списку вопросов</a>
 		</div>
 		<p class="typ-caption">Категория: Транспорт</p>
 		<div class="flex-container">
@@ -44,7 +44,7 @@
 					</div>
 				</div>
 				<div class="flex-container align-center">
-					<div class="flex-item flex-none margin-right-medium">
+					<div class="flex-item flex-none margin-right-medium md-margin-right-no md-margin-bottom-medium">
 						<a href="#" class="btn btn-default btn-lightblue">Следующий вопрос</a>
 					</div>
 					<div class="flex-item">

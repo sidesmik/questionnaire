@@ -1,0 +1,29 @@
+.status-block{
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+
+	.icon{
+		margin-right: 10px;
+
+		img{
+			display: block;
+		}
+	}
+
+	span{
+		color: $text-color;
+	}
+
+	&.status-green{
+		span{
+			color: $green;
+		}
+	}
+
+	&.status-red{
+		span{
+			color: $red;
+		}
+	}
+}

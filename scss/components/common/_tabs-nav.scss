@@ -2,51 +2,124 @@
 	width: 100%;
 	border-bottom: 2px solid $blue;
 	margin-bottom: 30px;
+	overflow-x: auto;
 
-	.item{
-		display: inline-flex;
-		align-items: center;
-		justify-content: space-between;
-		height: 41px;
-		border-radius: $r $r 0 0;
-		background: $light-bg;
-		margin-right: 10px;
-		padding: 5px 15px;
-		font-size: 14px;
-		line-height: 18px;
-		color: $text-light;
-		text-decoration: none;
-		transition: all $t;
+	.tabs-nav-inner{
+		width: auto;
+		display: flex;
 
-		.count{
-			width: 30px;
-			height: 30px;
-			border-radius: 50%;
-			display: flex;
+		> .item{
+			white-space: nowrap;
+			display: inline-flex;
 			align-items: center;
-			justify-content: center;
-			background: $gray;
-			color: #fff;
-			font-size: 12px;
+			justify-content: space-between;
+			height: 41px;
+			border-radius: $r $r 0 0;
+			background: $light-bg;
+			margin-right: 10px;
+			padding: 5px 15px;
+			font-size: 14px;
+			line-height: 18px;
+			color: $text-light;
+			text-decoration: none;
 			transition: all $t;
-			margin-left: 15px;
+
+			> .count{
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: $gray;
+				color: #fff;
+				font-size: 12px;
+				transition: all $t;
+				margin-left: 15px;
+			}
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			&:hover{
+				background: $midlight-bg;
+			}
+
+			&.current{
+				color: #fff;
+				background: $blue;
+
+				> .count{
+					background: #fff;
+					color: #3f322f;
+				}
+			}
 		}
 
-		&:last-child{
-			margin-right: 0;
+		&.theme-light{
+			border-bottom-color: #b4b4b4 !important;
+
+			> .item{
+				background: transparent !important;
+				position: relative;
+
+				&.current{
+					color: $blue;
+
+					&:after{
+						content: '';
+						display: block;
+						width: 100%;
+						height: 2px;
+						position: absolute;
+						bottom: -2px;
+						left: 0;
+						background: $dark;
+					}
+
+					> .count{
+						background: $blue;
+						color: #fff;
+					}
+				}
+			}
 		}
 
-		&:hover{
-			background: $midlight-bg;
-		}
+		$theme_colors: (
+			blue: $blue,
+			lightblue: $lightblue,
+			green: $green,
+			lightgray: $lightgray,
+			gray: $gray,
+			dark: $dark,
+			violet: $violet,
+		);
 
-		&.current{
-			color: #fff;
-			background: $blue;
+		@each $i in $theme_colors{
+			$color-key: nth($i, 1);
+			$color-value: nth($i, 2);
 
-			.count{
-				background: #fff;
-				color: #3f322f;
+			&.theme-#{$color-key}{
+				border-bottom-color: $color-value;
+
+				> .item{
+					&.current{
+						background: $color-value;
+					}
+				}
+
+				&.theme-light{
+					> .item{
+						&.current{
+							color: $color-value;
+
+							> .count{
+								background: $color-value;
+							}
+						}
+					}
+				}
 			}
 		}
 	}

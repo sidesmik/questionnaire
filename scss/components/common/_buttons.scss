@@ -39,6 +39,11 @@
 			padding: 3px 10px;
 		}
 
+		&.small-side-paddings{
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
 		&:not(.btn-light){
 			@each $i in $btn_colors{
 				$color-key: nth($i, 1);
@@ -87,5 +92,17 @@
 
 	&.fullwidht{
 		width: 100%;
+	}
+
+	&.btn-bigger{
+		font-size: 18px;
+		font-weight: 400;
+		padding-top: 16px;
+		padding-bottom: 16px;
+
+		&.btn-light{
+			padding-top: 14px;
+			padding-bottom: 14px;
+		}
 	}
 }

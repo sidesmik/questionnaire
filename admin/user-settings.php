@@ -8,7 +8,7 @@
 		<div class="page-header">
 			<h1><?= $page_title ?></h1>
 		</div>
-		<div class="form user-settings-form">
+		<div class="form narrow-form">
 			<div class="form-row">
 				<div class="form-label">Логин *</div>
 				<div class="form-field">
@@ -63,7 +63,7 @@
 				<div class="form-field">
 					<div class="date-select-block">
 						<div class="day">
-							<select placeholder="День">
+							<select>
 								<option class="hideme" value="v0">День</option>
 								<option value="v1">1</option>
 								<option value="v2">2</option>
@@ -71,14 +71,14 @@
 							</select>
 						</div>
 						<div class="month">
-							<select placeholder="Месяц">
+							<select>
 								<option class="hideme" value="v0">Месяц</option>
 								<option value="v1">Январь</option>
 								<option value="v2">Февраль</option>
 							</select>
 						</div>
 						<div class="year">
-							<select placeholder="Год">
+							<select>
 								<option class="hideme" value="v0">Год</option>
 								<option value="v1">1990</option>
 								<option value="v2">1991</option>

@@ -15,9 +15,31 @@
 		align-items: center;
 		justify-content: space-between;
 
-		.item{
+		> .item{
 			margin-right: 10px;
 			width: 90px;
+		}
+	}
+
+	&.column-view{
+		flex-direction: column;
+		align-items: stretch;
+
+		.text{
+			margin-right: 0;
+			margin-bottom: 10px;
+
+			strong{
+				display: block;
+			}
+		}
+	}
+
+	@media screen and (max-width: $desktop-breakpoint) {
+		flex-direction: column;
+
+		.text{
+			margin-bottom: 5px;
 		}
 	}
 }

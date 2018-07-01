@@ -1,0 +1,55 @@
+.gift-block{
+	display: flex;
+	align-items: center;
+	padding: 15px 25px;
+	background: #e9f5ff;
+
+	p{
+		margin: 0;
+	}
+
+	.text{
+		flex: auto;
+		padding-right: 30px;
+
+		.caption{
+			font-weight: bold;
+			color: $blue;
+			margin: 0;
+		}
+	}
+
+	.button{
+		text-align: center;
+		width: 130px;
+		flex: none;
+
+		p{
+			font-size: 12px;
+		}
+	}
+
+	&.active{
+		background: #d8ffd2;
+
+		.text{
+			.caption{
+				color: $green;
+			}
+		}
+	}
+
+	@media screen and (max-width: $mobile-small-breakpoint){
+		flex-direction: column;
+		align-items: stretch;
+
+		.text{
+			margin-bottom: 15px;
+		}
+
+		.button{
+			width: auto;
+			text-align: left;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.advertisment-block{
+	display: flex;
+	align-items: center;
+	padding: 15px 25px;
+	background: $light-bg;
+	width: 100%;
+
+	.image,
+	.plan,
+	.state{
+		flex: auto;
+	}
+
+	.action{
+		flex: none;
+	}
+
+	.image{
+		flex-grow: 3;
+
+		img{
+			max-width: 135px;
+			display: block;
+		}
+	}
+
+	@media screen and (max-width: $tablet-breakpoint){
+		flex-direction: column;
+		align-items: stretch;
+
+		.image,
+		.plan,
+		.state{
+			margin-bottom: 15px;
+		}
+	}
+}

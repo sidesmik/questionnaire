@@ -1,0 +1,29 @@
+.tarrif-plans-list{
+	display: flex;
+	width: 100%;
+
+	> .item{
+		display: flex;
+		margin-right: 5px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+
+	@media screen and (max-width: $desktop-breakpoint){
+		flex-wrap: wrap;
+		justify-content: center;
+
+		> .item{
+			margin-bottom: 5px;
+			flex-basis: calc(33.33333% - 5px);
+		}
+	}
+
+	@media screen and (max-width: 520px){
+		> .item{
+			flex-basis: calc(50% - 5px);
+		}
+	}
+}

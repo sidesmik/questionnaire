@@ -6,6 +6,8 @@ $lightgray: #f3f3f3;
 $gray: #a0a0a0;
 $dark: #282828;
 $violet: #251b34;
+$text-lightgray: #8b8b8b;
+$red: #ff3535;
 
 $light-bg: $lightgray;
 $midlight-bg: #e8e8e8;
@@ -22,4 +24,14 @@ $t: .3s;
 $r: 4px;
 
 // Content
-$max-content-width: 1110px;
+$content-min-width: 0px;
+$content-max-width: 1110px;
+
+$desktop-breakpoint: 1199px;
+$tablet-breakpoint: 960px;
+$mobile-big-breakpoint: 767px;
+$mobile-small-breakpoint: 479px;
+
+$desktop-width: 940px;
+$tablet-width: 740px;
+$mobile-width: 100%;

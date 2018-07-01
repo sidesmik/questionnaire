@@ -1,5 +1,6 @@
 .banner-block{
-	width: 468px;
+	width: 100%;
+	max-width: 468px;
 	height: 60px;
 	background: $lightgray;
 	display: flex;
@@ -8,4 +9,9 @@
 	font-size: 12px;
 	line-height: 16px;
 	color: #969696;
+
+	&.squared{
+		width: 255px;
+		height: 255px;
+	}
 }

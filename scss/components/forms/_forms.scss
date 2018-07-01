@@ -135,7 +135,7 @@ input[type="password"],
 input[type="url"],
 input[type="tel"],
 textarea{
-	height: 36px;
+	height: 40px;
 	border: 1px solid #ddd;
 	font-size: 14px;
 	padding: 0 10px;
@@ -175,10 +175,6 @@ textarea{
 
 
 // JCF
-.jcf-range{
-	margin: 0;
-}
-
 .jcf-select{
 	margin-bottom: 0;
 	border: 1px solid #ddd;
@@ -254,6 +250,8 @@ textarea{
 	}
 
 	&.jcf-compact-multiple{
+		max-width: 100%;
+
 		.jcf-select-opener{
 			&:before{
 				content: '';
@@ -426,7 +424,7 @@ textarea{
 }
 
 // Forms
-.user-settings-form{
+.narrow-form{
 	max-width: 350px;
 	width: 100%;
 }
