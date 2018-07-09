@@ -1,0 +1,19 @@
+.date-select-block{
+	display: flex;
+
+	.day{
+		width: 75px;
+		flex: none;
+		margin-right: 15px;
+	}
+
+	.month{
+		flex: auto;
+		margin-right: 15px;
+	}
+
+	.year{
+		width: 95px;
+		flex: none;
+	}
+}

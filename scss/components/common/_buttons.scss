@@ -5,6 +5,7 @@
 	cursor: pointer;
 	outline: none;
 	text-decoration: none;
+	align-items: center;
 
 	$btn_colors: (
 		blue: $blue,
@@ -14,34 +15,51 @@
 		gray: $gray,
 		dark: $dark,
 		violet: $violet,
+		azure: $azure,
+		midgray: $midgray
 	);
+
+	i{
+		display: block;
+
+		&:first-child{
+			margin-right: 12px;
+		}
+
+		&:last-child{
+			margin-left: 12px;
+		}
+	}
 
 	&.btn-default,
 	&.btn-light{
-		font-size: 14px;
+		font-size: 13px;
 		line-height: 18px;
 		color: #fff;
-		background: $green;
+		background: $lightblue;
 		text-align: center;
 		justify-content: center;
+		align-items: center;
 		font-weight: bold;
-		padding: 11px 30px;
+		padding: 16px 20px;
 		border-radius: $r;
 		box-shadow: 0 3px 16px rgba(#000, .2);
+		text-transform: uppercase;
 
 		&:not(.disabled):hover{
-			background: darken($green, 10%);
+			background: darken($lightblue, 10%);
 		}
 
 		&.btn-small{
-			font-weight: 400;
-			font-size: 12px;
-			padding: 3px 10px;
+			// font-weight: 400;
+			font-size: 13px;
+			text-transform: none;
+			padding: 9px 25px;
 		}
 
 		&.small-side-paddings{
-			padding-left: 20px;
-			padding-right: 20px;
+			padding-left: 10px;
+			padding-right: 10px;
 		}
 
 		&:not(.btn-light){
@@ -62,13 +80,18 @@
 
 	&.btn-light{
 		background: transparent;
-		color: $green;
-		border: 2px solid $green;
-		padding: 9px 30px;
+		color: $lightblue;
+		border: 2px solid $lightblue;
+		padding: 14px 30px;
 		box-shadow: none;
 
+		&:not(.disabled):hover{
+			background: $lightblue;
+			color: #fff;
+		}
+
 		&.btn-small{
-			padding: 1px 10px;
+			padding: 5px 25px;
 		}
 
 		@each $i in $btn_colors{
@@ -80,9 +103,20 @@
 				border-color: $color-value;
 
 				&:not(.disabled):hover{
-					background: #eee;
+					background: $color-value;
+					color: #fff;
 				}
 			}
+		}
+	}
+
+	&.disabled{
+		background: transparent;
+		border-color: lighten($midgray, 30%) !important;
+		opacity: .7;
+
+		&:hover{
+			cursor: default;
 		}
 	}
 

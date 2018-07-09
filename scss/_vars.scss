@@ -5,9 +5,11 @@ $green: #42ab31;
 $lightgray: #f3f3f3;
 $gray: #a0a0a0;
 $dark: #282828;
+$midgray: #7b7b7b;
 $violet: #251b34;
 $text-lightgray: #8b8b8b;
 $red: #ff3535;
+$azure: #00ccff;
 
 $light-bg: $lightgray;
 $midlight-bg: #e8e8e8;
@@ -17,7 +19,7 @@ $text-light: #929292;
 $text-gray: #b4b4b4;
 
 // Fonts
-$main: "Proxima Nova", Arial, sans-serif;
+$main: "Gotham Pro", Arial, sans-serif;
 
 // Params
 $t: .3s;
@@ -32,6 +34,7 @@ $tablet-breakpoint: 960px;
 $mobile-big-breakpoint: 767px;
 $mobile-small-breakpoint: 479px;
 
+$large-width: 1110px;
 $desktop-width: 940px;
 $tablet-width: 740px;
 $mobile-width: 100%;

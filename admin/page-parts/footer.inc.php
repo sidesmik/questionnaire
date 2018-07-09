@@ -34,12 +34,12 @@
 		</div>
 	</nav>
 	<script src="https://use.fontawesome.com/e6756a4761.js"></script>
-	<script src="../js/jquery.min.js"></script>
-	<script src="../js/jquery.range.min.js"></script>
-	<script src="../js/bigSlide.min.js"></script>
-	<script src="../js/jcf.js"></script>
-	<script src="../js/jcf.select.js"></script>
-	<script src="../js/jcf.scrollable.js"></script>
-	<script src="../js/admin.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.range.min.js"></script>
+	<script src="js/bigSlide.min.js"></script>
+	<script src="js/jcf.js"></script>
+	<script src="js/jcf.select.js"></script>
+	<script src="js/jcf.scrollable.js"></script>
+	<script src="js/admin.min.js"></script>
 </body>
 </html>

@@ -1,25 +1,33 @@
 h1, .h1{
-	color: $violet;
-	font-size: 30px;
+	color: $dark;
+	font-size: 36px;
 	line-height: 40px;
 	margin-bottom: 20px;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 h2, .h2{
-	font-size: 18px;
-	line-height: 24px;
-	color: $violet;
+	font-size: 24px;
+	line-height: 30px;
+	color: $dark;
 	font-weight: bold;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 h3, .h3{
 	font-size: 18px;
 	line-height: 24px;
-	color: $violet;
-	font-weight: 400;
+	color: $dark;
+	font-weight: 700;
 	margin-bottom: 10px;
+}
+
+h4, .h4{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	color: $dark;
+	font-weight: 700;
 }
 
 a{
@@ -67,26 +75,32 @@ body{
 p{
 	font-size: 14px;
 	line-height: 24px;
-	margin-bottom: 10px;
-	color: $text-color;
+	margin-bottom: 24px;
+	color: #404040;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
 }
 
 .typ-note{
 	font-size: 12px;
 	line-height: 16px;
-	color: #7b7b7b;
+	color: #a1a1a1;
 }
 
-ul.typ-ul{
+ul.typ-ul,
+.post-text ul{
 	margin-bottom: 12px;
 	list-style: none;
+	padding-left: 40px;
 
 	li{
 		font-size: 14px;
 		line-height: 24px;
 		color: $text-color;
 		position: relative;
-		padding-left: 12px;
+		padding-left: 20px;
 
 		&:before{
 			content: '';
@@ -97,7 +111,34 @@ ul.typ-ul{
 			position: absolute;
 			left: 0;
 			top: 8px;
-			background: $text-color;
+			background: #f93331;
+		}
+	}
+}
+
+ol.typ-ol,
+.post-text ol{
+	margin-bottom: 12px;
+	list-style: none;
+	padding-left: 30px;
+	counter-reset: li;
+
+	li{
+		font-size: 14px;
+		line-height: 24px;
+		color: $text-color;
+		position: relative;
+		padding-left: 30px;
+
+		&:before{
+			counter-increment: li;
+			content: "0"counter(li);
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0px;
+			color: #ababab;
+			font-weight: 700;
 		}
 	}
 }
@@ -126,4 +167,121 @@ ul.typ-ul{
 	line-height: 36px;
 	color: $dark;
 	font-weight: 400;
+}
+
+.typ-display-3{
+	font-size: 48px;
+	line-height: 54px;
+	color: $dark;
+	font-weight: 400;
+}
+
+.line-height-1{
+	line-height: 1em;
+}
+
+.post-text{
+	img{
+		max-width: 100%;
+
+		&.border-radius{
+			border-radius: $r;
+		}
+
+		&.fullwidth{
+			width: 100%;
+			height: auto;
+			display: block;
+			margin-bottom: 40px;
+		}
+	}
+
+	ul, ol{
+		margin-bottom: 24px;
+
+		li{
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 6px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			&:before{
+				top: 10px;
+			}
+		}
+	}
+
+	ol li:before{
+		top: 0;
+	}
+
+	p{
+		font-size: 16px;
+		line-height: 30px;
+		color: #121212;
+		margin-bottom: 30px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		+ ul,
+		+ ol{
+			margin-top: -15px;
+		}
+	}
+}
+
+.quote,
+blockquote,
+.post-text .quote,
+.post-text blockquote{
+	display: block;
+	padding: 25px 25px 25px 95px;
+	background: #f6f6f6;
+	border-radius: $r;
+	position: relative;
+	margin-bottom: 30px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	&:before{
+		content: ',,';
+		font-family: Arial;
+		font-weight: 700;
+		font-style: italic;
+		color: #b4b4b4;
+		font-size: 100px;
+		position: absolute;
+		letter-spacing: -7.5px;
+		left: 20px;
+		top: -5px;
+	}
+
+	p{
+		font-size: 14px;
+		line-height: 18px;
+		font-style: italic;
+		margin-bottom: 18px;
+		color: #353535;
+	}
+
+	.author{
+		font-size: 14px;
+		line-height: 18px;
+		font-style: italic;
+
+		.name{
+			font-weight: 700;
+		}
+
+		.position{
+			color: #777777;
+		}
+	}
 }

@@ -1,0 +1,34 @@
+.auth-component{
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top: 20px;
+
+	.auth-text{
+		text-align: center;
+		margin-bottom: 35px;
+
+		p{
+			font-size: 16px;
+		}
+	}
+
+	.auth-form{
+		width: 100%;
+		padding: 35px 30px;
+		background: #e9f5ff;
+
+		.auth-form-inner{
+			width: 100%;
+			max-width: 410px;
+			margin: 0 auto;
+
+			p{
+				font-size: 12px;
+				line-height: 18px;
+				color: #162a42;
+				text-align: center;
+			}
+		}
+	}
+}

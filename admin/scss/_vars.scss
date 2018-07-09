@@ -1,0 +1,37 @@
+// Colors
+$blue: #1d64a3;
+$lightblue: #4d91ce;
+$green: #42ab31;
+$lightgray: #f3f3f3;
+$gray: #a0a0a0;
+$dark: #282828;
+$violet: #251b34;
+$text-lightgray: #8b8b8b;
+$red: #ff3535;
+
+$light-bg: $lightgray;
+$midlight-bg: #e8e8e8;
+
+$text-color: $dark;
+$text-light: #929292;
+$text-gray: #b4b4b4;
+
+// Fonts
+$main: "Gotham Pro", Arial, sans-serif;
+
+// Params
+$t: .3s;
+$r: 4px;
+
+// Content
+$content-min-width: 0px;
+$content-max-width: 1110px;
+
+$desktop-breakpoint: 1199px;
+$tablet-breakpoint: 960px;
+$mobile-big-breakpoint: 767px;
+$mobile-small-breakpoint: 479px;
+
+$desktop-width: 940px;
+$tablet-width: 740px;
+$mobile-width: 100%;

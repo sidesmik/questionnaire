@@ -7,7 +7,7 @@
 	}
 
 	.form-row{
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 
 		.form-label{
 			margin-bottom: 5px;
@@ -427,4 +427,70 @@ textarea{
 .narrow-form{
 	max-width: 350px;
 	width: 100%;
+}
+
+// Checkbox
+.checkbox{
+	input{
+		display: none;
+
+		+ label{
+			display: block;
+			position: relative;
+			padding-left: 30px;
+			cursor: pointer;
+			font-size: 12px;
+			line-height: 18px;
+			color: #162a42;
+
+			&:before{
+				content: '';
+				display: block;
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				border-radius: $r;
+				background: #fff;
+				border: 1px solid #ddd;
+				transition: all $t;
+			}
+
+			&:after{
+				width: 0;
+				height: 0;
+				border: 3px solid transparent;
+				left: 6px;
+				top: 10px;
+				content: '';
+				display: block;
+				position: absolute;
+				transform: rotateZ(0deg);
+				transform-origin: 100% 100%;
+				transition: all $t;
+			}
+		}
+
+		&:checked{
+			+ label{
+				&:before{
+					background: $blue;
+					border-color: $blue;
+				}
+
+				&:after{
+					top: 1px;
+					left: 1px;
+					width: 4px;
+					height: 8px;
+					border-top: 2px solid transparent;
+					border-left: 2px solid transparent;
+					border-right: 2px solid #fff;
+					border-bottom: 2px solid #fff;
+					transform: rotateZ(37deg);
+				}
+			}
+		}
+	}
 }

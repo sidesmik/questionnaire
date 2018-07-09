@@ -82,7 +82,9 @@ $colors: (
 	gray: $gray,
 	dark: $dark,
 	violet: $violet,
-	text-lightgray: $text-lightgray
+	azure: $azure,
+	text-lightgray: $text-lightgray,
+	white: #fff
 );
 
 @each $i in $colors{
@@ -103,7 +105,8 @@ $aligns: (
 	start: 'flex-start',
 	stretch: 'stretch',
 	flex-end: 'flex-end',
-	flex-start: 'flex-start'
+	flex-start: 'flex-start',
+	between: 'space-between'
 );
 
 @each $i in $aligns{
@@ -114,7 +117,7 @@ $aligns: (
 		align-items: #{$align-value} !important;
 	}
 
-	.justify-content-#{$align-key} {
+	.justify-#{$align-key} {
 		justify-content: #{$align-value} !important;
 	}
 }
@@ -132,7 +135,7 @@ $aligns: (
 				align-items: #{$align-value} !important;
 			}
 
-			.#{$prefix}-justify-content-#{$align-key} {
+			.#{$prefix}-justify-#{$align-key} {
 				justify-content: #{$align-value} !important;
 			}
 		}
@@ -167,6 +170,8 @@ $aligns: (
 .font-bold{ font-weight: bold !important; }
 .font-normal{ font-weight: 400 !important; }
 .nowrap{ white-space: nowrap; }
+.text-uppercase{ text-transform: uppercase !important; }
+.text-center{ text-align: center; }
 
 // Divider
 .divider{

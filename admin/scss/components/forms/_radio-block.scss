@@ -1,0 +1,39 @@
+.radio-block{
+	input{
+		display: none;
+
+		+ label{
+			padding-left: 25px;
+			position: relative;
+			transition: all $t;
+			font-size: 14px;
+			line-height: 18px;
+			color: $text-color;
+			cursor: pointer;
+
+			&:before{
+				content: '';
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				position: absolute;
+				left: 0;
+				top: calc(50% - 7px);
+				background: #bfbfbf;
+				transition: all $t;
+			}
+
+			&:hover{
+				color: $blue;
+			}
+		}
+
+		&:checked{
+			+ label{
+				&:before{
+					background: $green;
+				}
+			}
+		}
+	}
+}

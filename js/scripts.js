@@ -5,7 +5,7 @@ $(document).ready(function(){
 		var location = window.location.href;
 		var cur_url = location.split('/').pop();
 
-		$('.sidebar-nav li, .panel-nav li').each(function () {
+		$('.header-nav li, .panel-nav li').each(function () {
 			var link = $(this).find('a').attr('href');
 
 			// console.log(link);
@@ -18,31 +18,6 @@ $(document).ready(function(){
 			{
 				$(this).addClass('current');
 			}
-		});
-	});
-
-	// Notifications
-	// $('.notification-card .card-opener').click(function(){
-	// 	$(this).siblings('.card-info').find('.card-hidden-text').slideToggle(300);
-	// 	$(this).parent().toggleClass('opened');
-	// });
-
-	// Question Editor
-	$('.editor .minimizeBtn').click(function(){
-		$(this).closest('.editor').children('.editor-content').slideToggle(300);
-		$(this).closest('.editor').toggleClass('opened');
-	});
-
-	// Logic card
-	$(function(){
-		$('.logic-card .card-title, .logic-card .card-opener').click(function(){
-			$(this).closest('.logic-card').toggleClass('opened');
-			$(this).closest('.logic-card').children('.card-content').slideToggle(300);
-		});
-
-		$('.condition-card .condition-title, .condition-card .minimize').click(function(){
-			$(this).closest('.condition-card').toggleClass('closed');
-			$(this).closest('.condition-card').children('.condition-content').slideToggle(300);
 		});
 	});
 
@@ -83,6 +58,46 @@ $(document).ready(function(){
 		side: 'right',
 		easyClose: true,
 		menuWidth: '260px'
+	});
+
+	// Main Slider
+	$('.main-slider').slick({
+		arrows: false,
+		dots: false
+	});
+
+
+	// Sticky Header Highliting
+	$(function(){
+		function changeHeaderState(isScrolled, isHeaderScrolled){
+			if(isScrolled && !isHeaderScrolled){
+				$(".header").addClass('scrolled');
+			} else{
+				$(".header").removeClass('scrolled');
+			}
+		}
+
+		var isHeaderScrolled = false;
+		var isScrolled = $(window).scrollTop() > 10;
+
+		changeHeaderState(isScrolled, isHeaderScrolled)
+
+		$(window).scroll(function(){
+			isScrolled = $(window).scrollTop() > 10;
+
+			changeHeaderState(isScrolled, isHeaderScrolled)
+		});
+	});
+
+	// About Us
+	$('.about-us-section .section-image .image-corner').css({
+		'border-top-width' : $('.about-us-section').outerHeight() + "px"
+	});
+
+	$(window).resize(function(){
+		$('.about-us-section .section-image .image-corner').css({
+			'border-top-width' : $('.about-us-section').outerHeight() + "px"
+		});
 	});
 
 });

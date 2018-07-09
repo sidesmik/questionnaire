@@ -1,0 +1,18 @@
+.main-slider{
+	background: $blue;
+	width: 100%;
+
+	.slide{
+		height: 700px;
+		background-size: cover;
+		// background-attachment: fixed;
+		background-position: center;
+		display: flex;
+		padding: 150px 0;
+		align-items: center;
+	}
+
+	.slick-arrow{
+		
+	}
+}

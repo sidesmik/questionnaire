@@ -1,0 +1,31 @@
+.header-nav{
+	list-style: none;
+	display: inline-flex;
+	align-items: center;
+
+	li{
+		margin-right: 30px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			font-size: 14px;
+			line-height: 18px;
+			font-weight: bold;
+			color: $lightgray;
+			text-decoration: none;
+
+			&:hover{
+				color: $azure;
+			}
+		}
+
+		&.current{
+			a{
+				color: $azure;
+			}
+		}
+	}
+}

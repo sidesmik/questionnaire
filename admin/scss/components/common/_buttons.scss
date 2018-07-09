@@ -1,0 +1,108 @@
+.btn{
+	display: inline-flex;
+	border: none;
+	transition: all $t;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+
+	$btn_colors: (
+		blue: $blue,
+		lightblue: $lightblue,
+		green: $green,
+		lightgray: $lightgray,
+		gray: $gray,
+		dark: $dark,
+		violet: $violet,
+	);
+
+	&.btn-default,
+	&.btn-light{
+		font-size: 14px;
+		line-height: 18px;
+		color: #fff;
+		background: $green;
+		text-align: center;
+		justify-content: center;
+		font-weight: bold;
+		padding: 11px 30px;
+		border-radius: $r;
+		box-shadow: 0 3px 16px rgba(#000, .2);
+
+		&:not(.disabled):hover{
+			background: darken($green, 10%);
+		}
+
+		&.btn-small{
+			font-weight: 400;
+			font-size: 12px;
+			padding: 3px 10px;
+		}
+
+		&.small-side-paddings{
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		&:not(.btn-light){
+			@each $i in $btn_colors{
+				$color-key: nth($i, 1);
+				$color-value: nth($i, 2);
+
+				&.btn-#{$color-key}{
+					background: $color-value;
+
+					&:not(.disabled):hover{
+						background: darken($color-value, 10%);
+					}
+				}
+			}
+		}
+	}
+
+	&.btn-light{
+		background: transparent;
+		color: $green;
+		border: 2px solid $green;
+		padding: 9px 30px;
+		box-shadow: none;
+
+		&.btn-small{
+			padding: 1px 10px;
+		}
+
+		@each $i in $btn_colors{
+			$color-key: nth($i, 1);
+			$color-value: nth($i, 2);
+
+			&.btn-#{$color-key}{
+				color: $color-value;
+				border-color: $color-value;
+
+				&:not(.disabled):hover{
+					background: #eee;
+				}
+			}
+		}
+	}
+
+	&.disabled{
+		cursor: default;
+	}
+
+	&.fullwidht{
+		width: 100%;
+	}
+
+	&.btn-bigger{
+		font-size: 18px;
+		font-weight: 400;
+		padding-top: 16px;
+		padding-bottom: 16px;
+
+		&.btn-light{
+			padding-top: 14px;
+			padding-bottom: 14px;
+		}
+	}
+}

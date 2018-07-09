@@ -1,0 +1,56 @@
+.tarrif-plans-list{
+	display: flex;
+	width: calc(100% + 20px);
+	margin-left: -10px;
+	margin-right: -10px;
+
+	> .item{
+		display: flex;
+		flex: auto;
+		padding: 0 10px;
+		flex-basis: 20%;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+
+	@media screen and (max-width: $desktop-breakpoint){
+		flex-wrap: wrap;
+		justify-content: center;
+
+		> .item{
+			margin-bottom: 5px;
+			flex-basis: calc(33.33333% - 5px);
+		}
+	}
+
+	@media screen and (max-width: 520px){
+		> .item{
+			flex-basis: calc(50% - 5px);
+		}
+	}
+}
+
+.tarrif-plan-block{
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	padding: 18px;
+	border-radius: $r;
+	width: 100%;
+
+	.text{
+		flex: auto;
+		text-align: center;
+		margin-bottom: 15px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	.button{
+		flex: none;
+	}
+}

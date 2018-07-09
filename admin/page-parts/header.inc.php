@@ -23,18 +23,16 @@
 	<meta charset="UTF-8">
 	<title><?= $page_title ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="../css/jcf.css">
-	<link rel="stylesheet" href="../css/jquery.range.css">
-	<link rel="stylesheet" href="../css/admin.css">
+	<link rel="stylesheet" href="css/jcf.css">
+	<link rel="stylesheet" href="css/jquery.range.css">
+	<link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
 	<div class="wrapper push">
 		<div class="header push">
 			<div class="header-inner">
 				<div class="logo-section">
-					<a href="index.php" class="logo">
-						<img src="img/logo.png" alt="">
-					</a>
+					<a href="index.php" class="logo"></a>
 				</div>
 				<div class="header-main">
 					<div class="header-section hidden-sm">

@@ -1,67 +1,19 @@
 .wrapper{
-	padding-top: 100px;
+	padding-top: 140px;
 	min-height: 100vh;
 	position: relative;
-	overflow-x: hidden;
+	overflow: hidden;
 
 	@media screen and (max-width: $mobile-big-breakpoint){
 		padding-top: 70px;
 	}
 
 	.main-content{
-		display: flex;
-		justify-content: space-between;
-		padding-bottom: 40px;
-		max-width: $content-max-width;
-		margin: 0 auto;
+		// padding-bottom: 40px;
+		width: 100%;
 
-		.sidebar{
-			width: 240px;
-			flex: none;
-			margin-right: 45px;
-		}
-
-		.page-content{
-			flex: auto;
-			max-width: calc(100% - 285px);
-		}
-
-		@media screen and (max-width: $desktop-breakpoint) {
-			max-width: $desktop-width;
-
-			.sidebar{
-				width: 220px;
-				margin-right: 30px;
-			}
-
-			.page-content{
-				max-width: calc(100% - 250px);
-			}
-		}
-
-		@media screen and (max-width: $tablet-breakpoint){
-			max-width: $tablet-width;
-
-			.sidebar{
-				width: 200px;
-			}
-
-			.page-content{
-				max-width: calc(100% - 230px);
-			}
-		}
-
-		@media screen and (max-width: $mobile-big-breakpoint){
-			max-width: $mobile-width;
-
-			.sidebar{
-				display: none;
-			}
-
-			.page-content{
-				padding: 0 15px;
-				max-width: calc(100% + 0px);
-			}
+		.page{
+			padding-bottom: 70px;
 		}
 	}
 }
@@ -70,4 +22,88 @@
 	padding: 25px 30px;
 	background: #f9f9f9;
 	width: 100%;
+}
+
+.light-section{
+	background: #e9f5ff;
+	padding: 35px 0;
+}
+
+.container{
+	width: 100%;
+	max-width: $large-width;
+	margin: 0 auto;
+
+	@media screen and (max-width: $desktop-breakpoint) {
+		max-width: $desktop-width;
+	}
+
+	@media screen and (max-width: $tablet-breakpoint){
+		max-width: $tablet-width;
+	}
+
+	@media screen and (max-width: $mobile-big-breakpoint){
+		max-width: $mobile-width;
+	}
+
+	.row{
+		display: flex;
+		flex-wrap: wrap;
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		margin-right: -15px;
+
+		@mixin col-generator ($prefix:'.col', $prop: 'width', $total-columns:12) {
+			$col-widths: ();
+
+			@for $i from 1 through $total-columns {
+
+				$w: ($i /$total-columns);
+
+				@if not index($col-widths, $w) {
+					#{$prefix}-#{$i} {
+						#{$prop}: $w * 100%;
+						flex-grow: 0;
+					}
+
+					$col-widths: append($col-widths, $w, comma);
+				}
+			}
+		}
+
+		@include col-generator();
+
+		@media screen and (max-width: $tablet-breakpoint){
+			@include col-generator('.col-md');
+		}
+
+		@media screen and (max-width: $mobile-big-breakpoint){
+			@include col-generator('.col-sm');
+		}
+
+		@media screen and (max-width: $mobile-small-breakpoint){
+			@include col-generator('.col-xs');
+		}
+
+		.col{
+			padding: 0 15px;
+
+			&.stretch-items{
+				align-items: stretch;
+				display: flex;
+			}
+		}
+	}
+
+	@media screen and (max-width: $mobile-big-breakpoint){
+		.row{
+			width: calc(100% + 16px);
+			margin-left: -8px;
+			margin-right: -8px;
+
+			.col{
+				padding: 0 8px;
+			}
+		}
+	}
 }

@@ -1,0 +1,61 @@
+@import "vars";
+@import "fonts";
+@import "base";
+@import "layout";
+@import "typography";
+@import "icons";
+@import "components/assist";
+
+// Header
+@import "components/header/header";
+@import "components/header/header-nav";
+
+// Footer
+@import "components/footer/footer-section";
+
+
+// Common
+@import "components/common/buttons";
+@import "components/common/tabs-nav";
+@import "components/common/cards-list";
+@import "components/common/card-block";
+@import "components/common/flex-container";
+@import "components/common/tables";
+@import "components/common/tab-switcher";
+@import "components/common/panel";
+@import "components/common/news-block";
+@import "components/common/breadcrumbs";
+@import "components/common/filters-list";
+@import "components/common/pagination";
+@import "components/common/socials-list";
+@import "components/common/work-with-us-section";
+
+@import "components/advertisment/tarrifs";
+
+// Forms
+@import "components/forms/forms";
+@import "components/forms/radio-block";
+@import "components/forms/date-select-block";
+@import "components/forms/range";
+
+// Login/Registration
+@import "components/auth/auth-component";
+
+
+/* 
+ *  Home Page
+ */
+
+// Slider Section
+@import "components/home-page/slider-section/slider-section";
+@import "components/home-page/slider-section/main-slider";
+
+// Why We Section
+@import "components/home-page/why-we-section/why-we-section";
+@import "components/home-page/why-we-section/features-list";
+
+// About Us Section
+@import "components/home-page/about-us-section/about-us-section";
+
+// News Section
+@import "components/home-page/news-section/news-section";

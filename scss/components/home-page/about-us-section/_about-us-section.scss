@@ -1,0 +1,51 @@
+.about-us-section{
+	padding: 100px 0;
+	position: relative;
+	background: #f1f8fe;
+
+	&:before,
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 2;
+	}
+
+	&:before{
+		width: 586px;
+		height: 188px;
+		left: calc(50% - 270px);
+		top: -157px;
+		background: url(../img/about-us/about-us-before.png) no-repeat center center;
+	}
+
+	&:after{
+		width: 735px;
+		height: 124px;
+		left: calc(50% - 371px);
+		top: calc(100% - 32px);
+		background: url(../img/about-us/about-us-after.png) no-repeat center center;
+	}
+
+	.section-image{
+		width: 50%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100%;
+		background: url(../img/about-us/about-us-section-image.jpg) no-repeat center center;
+		background-size: cover;
+
+		.image-corner{
+			display: block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 600px 190px 0 0;
+			border-color: #f1f8fe transparent transparent transparent;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+}
