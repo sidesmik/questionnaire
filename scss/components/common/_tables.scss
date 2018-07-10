@@ -11,14 +11,10 @@
 
 	tr{
 		transition: all $t;
-		background: #f3f3f3;
+		background: #fff;
 
 		&:last-child{
 			margin-bottom: 0;
-		}
-
-		&:nth-child(odd){
-			background: #e8e8e8;
 		}
 
 		td,
@@ -30,24 +26,13 @@
 			line-height: 18px;
 			vertical-align: middle;
 			border: 0;
-
-			// .btn.btn-light{ margin-bottom: 3px; }
-
-			&:first-child{
-				border-radius: $r 0 0 $r;
-			}
-
-			&:last-child{
-				border-radius: 0 $r $r 0;
-			}
 		}
 
 		th{
-			background: $blue;
+			background: $dark;
 			color: #fff;
 			font-weight: 400;
 			text-align: left;
-			border-bottom-width: 3px;
 		}
 
 		&:last-child{
@@ -57,7 +42,7 @@
 		}
 
 		&:hover{
-			background: darken(#fff, 15%);
+			background: darken(#fff, 10%);
 		}
 	}
 
