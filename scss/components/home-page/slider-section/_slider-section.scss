@@ -1,3 +1,43 @@
 .slider-section{
 	margin-top: -140px;
+
+	.slider-pagination{
+		margin-top: -60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		z-index: 2000;
+
+		.current{
+			font-size: 14px;
+			line-height: 20px;
+			color: #fff;
+			margin: 0 45px;
+		}
+
+		.slick-arrow{
+			background: url(../img/slider/slider-arrows.png) no-repeat;
+			height: 16px;
+			width: 35px;
+			border: none;
+			border-radius: 0;
+			text-indent: -999999px;
+			cursor: pointer;
+			outline: none !important;
+			transition: all $t;
+
+			&.slick-prev{
+				background-position: left center;
+			}
+
+			&.slick-next{
+				background-position: right center;
+			}
+
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+	}
 }

@@ -18,6 +18,16 @@
 					<a href="registration.php" class="btn btn-default">Стань участником проекта</a>
 				</div>
 			</div>
+			<div class="slide" style="background-image: url(img/slider/slide-bg.jpg);">
+				<div class="container">
+					<div class="typ-display-3 color-white font-bold text-uppercase">Заголовок третьего слайда</div>
+					<div class="h2 color-white text-uppercase margin-bottom-large">Честный и проверенный сервис опросов</div>
+					<a href="registration.php" class="btn btn-default">Стань участником проекта</a>
+				</div>
+			</div>
+		</div>
+		<div class="slider-pagination">
+			<div class="current"></div>
 		</div>
 	</div>
 	<div class="why-we-section">
