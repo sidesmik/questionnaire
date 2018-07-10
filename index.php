@@ -22,7 +22,7 @@
 	</div>
 	<div class="why-we-section">
 		<div class="container">
-			<div class="section-caption">
+			<div class="section-caption sm-margin-bottom-large">
 				<h2 class="h1 margin-no">Почему <br>выбирают нас?</h2>
 			</div>
 			<div class="features-list">
@@ -60,7 +60,7 @@
 				</div>
 			</div>
 			<div class="why-we-button">
-				<a href="registration.php" class="btn btn-default fullwidth">Начать зарабатывать</a>
+				<a href="registration.php" class="btn btn-default xs-fullwidth">Начать зарабатывать</a>
 			</div>
 		</div>
 	</div>
@@ -70,17 +70,17 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col col-6">
+				<div class="col col-6 col-sm-12">
 					<div class="section-content">
 						<h2 class="h1 margin-bottom-large">О проекте</h2>
 						<p>Идейные соображения высшего порядка, а также сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. Таким образом постоянный количественный рост и сфера нашей активности позволяет оценить значение направлений прогрессивного развития.</p>
 						<p>Повседневная практика показывает, что начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Значимость этих проблем настолько очевидна, что консультация с широким активом позволяет оценить значение систем массового участия.</p>
 						<div class="flex-container align-center fullwidth small-gutter">
 							<div class="flex-row">
-								<div class="flex-col col-6">
+								<div class="flex-col col-6 col-lg-12 lg-margin-bottom-small">
 									<a href="registration.php" class="btn btn-default fullwidth">Бесплатная регистрация</a>
 								</div>
-								<div class="flex-col col-6">
+								<div class="flex-col col-6 col-lg-12">
 									<a href="about.php" class="btn btn-light btn-midgray fullwidth">Узнать больше</a>
 								</div>
 							</div>
@@ -94,8 +94,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col col-12">
-					<div class="flex-container align-center justify-between margin-bottom-huge fullwidth">
-						<div class="flex-item">
+					<div class="flex-container align-center justify-between margin-bottom-huge fullwidth sm-flex-column sm-align-stretch">
+						<div class="flex-item margin-right-normal sm-margin-bottom-small">
 							<h2 class="h1 margin-no">Свежие новости</h2>
 						</div>
 						<div class="flex-item">

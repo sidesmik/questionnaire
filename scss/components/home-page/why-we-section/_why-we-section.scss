@@ -8,4 +8,15 @@
 		width: 255px;
 		float: right;
 	}
+
+	@media screen and (max-width: $mobile-big-breakpoint){
+		.why-we-button{
+			margin-top: 45px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			float: none;
+		}
+	}
 }

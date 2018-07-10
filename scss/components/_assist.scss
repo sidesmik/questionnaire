@@ -1,4 +1,5 @@
 $screen_sizes: (
+	lg: $desktop-breakpoint,
 	md: $tablet-breakpoint,
 	sm: $mobile-big-breakpoint,
 	xs: $mobile-small-breakpoint
@@ -155,13 +156,38 @@ $aligns: (
 
 .flex-right{ margin-left: auto; }
 
+
+.fullwidth{
+	width: 100%;
+}
+
+.flex-wrap-no{
+	flex-wrap: nowrap !important;
+}
+
+.flex-wrap-wrap{
+	flex-wrap: wrap !important;
+}
+
 @each $k in $screen_sizes{
 	$prefix: nth($k, 1);
 	$breakpoint: nth($k, 2);
 
 	@media screen and (max-width: $breakpoint){
 		.#{$prefix}-flex-column {
-			flex-direction: column;
+			flex-direction: column !important;
+		}
+
+		.#{$prefix}-flex-wrap-no {
+			flex-wrap: nowrap !important;
+		}
+
+		.#{$prefix}-flex-wrap-wrap {
+			flex-wrap: wrap !important;
+		}
+
+		.#{$prefix}-fullwidth {
+			width: 100% !important;
 		}
 	}
 }
@@ -179,10 +205,6 @@ $aligns: (
 	height: 1px;
 	margin: 30px 0;
 	background: #ddd;
-}
-
-.fullwidth{
-	width: 100%;
 }
 
 .scrollable-container{

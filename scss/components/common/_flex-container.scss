@@ -21,6 +21,10 @@
 	flex-wrap: wrap;
 	display: flex;
 
+	@media screen and (max-width: $desktop-breakpoint){
+		@include col-generator('.col-lg');
+	}
+
 	@media screen and (max-width: $tablet-breakpoint){
 		@include col-generator('.col-md');
 	}
@@ -31,10 +35,6 @@
 
 	@media screen and (max-width: $mobile-small-breakpoint){
 		@include col-generator('.col-xs');
-	}
-
-	&.align-center{
-		align-items: center;
 	}
 
 	.item{

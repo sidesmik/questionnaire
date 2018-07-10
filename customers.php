@@ -25,13 +25,13 @@
 						<h2>Опрос по шаблонам</h2>
 						<p>С помощью наших шаблонов опросов, утвержденных методистами, Вы можете создавать опросы многих разных типов и получать ответы, которые необходимы для принятия верных решений.</p>
 						<div class="row">
-							<div class="col col-6">
+							<div class="col col-6 col-sm-12 sm-margin-bottom-large">
 								<h4 class="color-blue">Оценка удовлетворенности клиентов</h4>
 								<p class="color-text-lightgray">Ваши клиенты — ключ к Вашему успеху. Собирайте информацию и развивайте свой бизнес с помощью онлайн-опросов по оценке уровня удовлетворенности клиентов.</p>
 								<h4 class="color-blue">Опросы для онлайн-исследований</h4>
 								<p class="color-text-lightgray">Будь то научное исследование или запуск нового продукта — узнайте, как могут помочь наши профессиональные шаблоны, эффективная аналитика и целевая аудитория для Ваших опросов.</p>
 							</div>
-							<div class="col col-6">
+							<div class="col col-6 col-sm-12">
 								<h4 class="color-blue">Маркетинговые исследования</h4>
 								<p class="color-text-lightgray">Онлайн-опрос по исследованию рынка представляет собой быстрый методл определения оптимальной цены для новой продукции, усиления удержания клиентов или измерения степени осведомленности и понимания среди клиентов..</p>
 								<h4 class="color-blue">Опросы для некоммерческой деятельности</h4>
@@ -46,10 +46,10 @@
 	<div class="light-section">
 		<div class="container">
 			<div class="row align-center">
-				<div class="col col-6">
-					<h2 class="typ-display-2 font-bold line-height-1 margin-no">Начните получать ответы <br>уже сегодня</h2>
+				<div class="col col-6 col-sm-12">
+					<h2 class="typ-display-2 font-bold line-height-1 margin-no sm-margin-bottom-large">Начните получать ответы <br class="hidden-md">уже сегодня</h2>
 				</div>
-				<div class="col col-6">
+				<div class="col col-6 col-sm-12">
 					<a href="registration.php" class="btn btn-default fullwidth" style="max-width: 265px;">Бесплатная регистрация</a>
 				</div>
 			</div>

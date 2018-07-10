@@ -87,16 +87,44 @@
 	}
 
 
-	&:not(.no-items-padding) > .item{
-		margin-top: -100px;
+	@media screen and (min-width: calc($mobile-big-breakpoint + 1px)){
+		&:not(.no-items-padding) > .item{
+			margin-top: -100px;
 
-		@each $i in $item-paddings{
-			$item-key: nth($i, 1);
-			$item-padding: nth($i, 2);
+			@each $i in $item-paddings{
+				$item-key: nth($i, 1);
+				$item-padding: nth($i, 2);
 
-			&:nth-child(#{$item-key}){
-				padding-top: $item-padding;
+				&:nth-child(#{$item-key}){
+					padding-top: $item-padding;
+				}
 			}
+		}
+	}
+
+	@media screen and (max-width: $mobile-big-breakpoint){
+		width: calc(100% + 16px);
+		margin-left: -8px;
+		margin-right: -8px;
+		margin-bottom: -30px;
+		flex-wrap: wrap;
+
+		> .item{
+			width: 50%;
+			margin-bottom: 30px;
+
+			.item-text{
+				p{
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 400px){
+		> .item{
+			width: 100%;
 		}
 	}
 }

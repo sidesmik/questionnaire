@@ -12,7 +12,7 @@
 					<h1><?= $page_title ?></h1>
 					<p>Служба технической поддержки работает специально для Вас 24/7 Мы всегда рады будем ответить на интересующие Вас вопросы! <br>Пожалуйста, описывайте проблему достаточно подробно! Не следует дублировать вопрос, если Вы ещё не получили ответ на предыдущий! <br>Спасибо что Вы с нами!</p>
 					<div class="row">
-						<div class="col col-10 col-xs-12">
+						<div class="col col-10 col-md-12">
 							<div class="gray-section margin-bottom-huge">
 								<div class="form support-form margin-no">
 									<div class="form-row">

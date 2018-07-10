@@ -5,7 +5,7 @@
 	overflow: hidden;
 
 	@media screen and (max-width: $mobile-big-breakpoint){
-		padding-top: 70px;
+		padding-top: 80px;
 	}
 
 	.main-content{
@@ -22,6 +22,10 @@
 	padding: 30px 35px;
 	background: #f0f0f0;
 	width: 100%;
+
+	@media screen and (max-width: $mobile-big-breakpoint){
+		padding: 20px;
+	}
 }
 
 .light-section{
@@ -44,6 +48,7 @@
 
 	@media screen and (max-width: $mobile-big-breakpoint){
 		max-width: $mobile-width;
+		padding: 0 16px;
 	}
 
 	.row{
@@ -72,6 +77,10 @@
 		}
 
 		@include col-generator();
+
+		@media screen and (max-width: $desktop-breakpoint){
+			@include col-generator('.col-lg');
+		}
 
 		@media screen and (max-width: $tablet-breakpoint){
 			@include col-generator('.col-md');

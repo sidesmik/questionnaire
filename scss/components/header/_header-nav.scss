@@ -28,4 +28,21 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: $desktop-breakpoint){
+		flex-wrap: wrap;
+		justify-content: center;
+
+		li,
+		li:last-child{
+			margin: 0 25px;
+		}
+	}
+
+	@media screen and (max-width: $tablet-breakpoint){
+		li,
+		li:last-child{
+			margin: 0 15px;
+		}
+	}
 }

@@ -20,14 +20,21 @@
 		justify-content: center;
 
 		> .item{
-			margin-bottom: 5px;
-			flex-basis: calc(33.33333% - 5px);
+			flex: none;
+			margin-bottom: 10px;
+			flex-basis: 33.33333%;
 		}
 	}
 
-	@media screen and (max-width: 520px){
+	@media screen and (max-width: $mobile-big-breakpoint){
 		> .item{
-			flex-basis: calc(50% - 5px);
+			flex-basis: 50%;
+		}
+	}
+
+	@media screen and (max-width: $mobile-small-breakpoint){
+		> .item{
+			flex-basis: 100%;
 		}
 	}
 }

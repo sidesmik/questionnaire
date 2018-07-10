@@ -5,7 +5,7 @@
 
 	$pages = array(
 		"about.php" => "О проекте",
-		"rules.php" => "Правила",
+		"#" => "Правила",
 		"news.php" => "Новости",
 		"advertisment.php" => "Реклама на сайте",
 		"customers.php" => "Заказчикам"
@@ -35,16 +35,22 @@
 					<a href="index.php" class="logo"></a>
 				</div>
 				<div class="header-main">
-					<div class="header-section">
+					<div class="header-section hidden-sm">
 						<ul class="header-nav">
 							<?php foreach ($pages as $path => $name): ?>
 								<li><a href="<?= $path ?>"><?= $name ?></a></li>
 							<?php endforeach ?>
 						</ul>
 					</div>
-					<div class="header-section">
-						<a href="registration.php" class="btn btn-light btn-small btn-azure">Регистрация</a>
-						<a href="login.php" class="btn btn-light btn-small btn-azure">Вход</a>
+					<div class="header-section hidden-sm">
+						<div class="flex-container justify-between flex-wrap-no md-flex-wrap-wrap">
+							<div class="flex-item margin-right-small md-margin-right-no md-margin-bottom-tiny md-fullwidth">
+								<a href="registration.php" class="btn btn-light btn-small btn-azure md-fullwidth">Регистрация</a>
+							</div>
+							<div class="flex-item md-fullwidth">
+								<a href="login.php" class="btn btn-light btn-small btn-azure md-fullwidth">Вход</a>
+							</div>
+						</div>
 					</div>
 					<div class="header-section visible-sm flex-right">
 						<div class="menu-opener">
