@@ -87,7 +87,7 @@
 	}
 
 
-	@media screen and (min-width: calc($mobile-big-breakpoint + 1px)){
+	@media screen and (min-width: $mobile-big-breakpoint + 1px){
 		&:not(.no-items-padding) > .item{
 			margin-top: -100px;
 
